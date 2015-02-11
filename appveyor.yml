@@ -28,13 +28,13 @@ artifacts:
     name: dist-files
 
 deploy:
-  - provider: GitHub
-    release: gbc-front-assets-v$(appveyor_build_version)
-    auth_token:
-      secure: LcJ2Fmw10e3vHUnFrUFTRSyEbQKcFMSwANaZH7RvTi0xpdgsIT7EdtRLGV1CdQA5tWDVR3E8TBp3z52gS/ZQe6FD+vAkc7yn4MkxhBMynSA=
-    artifact: dist-files
-    on:
-      branch: master
+#  - provider: GitHub
+#    release: gbc-front-assets-v$(appveyor_build_version)
+#    auth_token:
+#      secure: LcJ2Fmw10e3vHUnFrUFTRSyEbQKcFMSwANaZH7RvTi0xpdgsIT7EdtRLGV1CdQA5tWDVR3E8TBp3z52gS/ZQe6FD+vAkc7yn4MkxhBMynSA=
+#    artifact: dist-files
+#    on:
+#      branch: master
       #appveyor_repo_tag: true
   - provider: S3
     access_key_id:
