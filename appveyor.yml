@@ -1,33 +1,49 @@
-# Test against this version of Node.js
 environment:
   nodejs_version: "0.10"
 
-# branches to build
 branches:
   except:
     - gh-pages
 
-# Do not build on tags (GitHub only)
 skip_tags: true	
-  
-# Install scripts. (runs after repo cloning)
+
+version: 1.0.{build}
+
 install:
-  # Get the latest stable version of Node.js
   - ps: Install-Product node $env:nodejs_version
-  # install modules
   - npm install
 
-# Post-install test scripts.
 test_script:
-  # Output useful info for debugging.
   - node --version
   - npm --version
-  # run tests
   - npm test
 
-# Don't actually build.
-build: off
+# build: off
+build_script:
+  - gulp
 
 artifacts:
   - path: dist\*
-    name: dist
+    name: dist-files
+	
+deploy:
+  - provider: GitHub
+    release: gbc-front-assets-v$(appveyor_build_version)
+    auth_token:
+      secure: LcJ2Fmw10e3vHUnFrUFTRSyEbQKcFMSwANaZH7RvTi0xpdgsIT7EdtRLGV1CdQA5tWDVR3E8TBp3z52gS/ZQe6FD+vAkc7yn4MkxhBMynSA=
+    artifact: dist-files
+    on:
+      branch: master
+      #appveyor_repo_tag: true
+  - provider: S3
+    access_key_id:
+      secure: 9w8IfydwZAZhMVxqiYzMmh7fBcjyAZFh2gymY8TX/Vc=
+    secret_access_key:
+      secure: Vb9C/cW9Z1bh0EtFI4sifQuztzWtoxprNpxdrDXHR1bGVtK3HxXWeiOetgoHmb9i
+    bucket: static.guildford.gov.uk
+    folder: assets
+    artifact: dist-files
+    set_public: true
+    on:
+      branch: master
+      #appveyor_repo_tag: true
