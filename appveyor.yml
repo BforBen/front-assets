@@ -5,7 +5,7 @@ branches:
   except:
     - gh-pages
 
-skip_tags: true	
+skip_tags: true
 
 version: 1.0.{build}
 
@@ -25,7 +25,7 @@ build_script:
 artifacts:
   - path: dist\*
     name: dist-files
-	
+
 deploy:
   - provider: GitHub
     release: gbc-front-assets-v$(appveyor_build_version)
