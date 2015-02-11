@@ -41,7 +41,7 @@ deploy:
       secure: 9w8IfydwZAZhMVxqiYzMmh7fBcjyAZFh2gymY8TX/Vc=
     secret_access_key:
       secure: Vb9C/cW9Z1bh0EtFI4sifQuztzWtoxprNpxdrDXHR1bGVtK3HxXWeiOetgoHmb9i
-    bucket: static.guildford.gov.uk
+    bucket: static.guildford.gov.uk.s3-eu-west-1.amazonaws.com
     folder: assets
     artifact: dist-files
     set_public: true
