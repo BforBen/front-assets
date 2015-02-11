@@ -24,7 +24,7 @@ build_script:
   - gulp
 
 artifacts:
-  - path: dist\*
+  - path: dist\\*
     name: dist-files
 
 deploy:
