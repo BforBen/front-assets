@@ -44,7 +44,7 @@ deploy:
     secret_access_key:
       secure: PBroBy13eeFE/m+7EklAwgM/KDWeVWr5L0yE4nIBx7KqBQd6jOgvU/lDeH4LEBvS
     bucket: static.guildford.gov.uk
-    region eu-west-1
+    region: eu-west-1
     folder: assets
     artifact: dist-files
     set_public: true
