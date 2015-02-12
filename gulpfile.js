@@ -1,17 +1,47 @@
 var gulp = require('gulp'),
-		csslint = require('gulp-csslint'),
-        del = require('del'),
-		gutil = require('gulp-util'),
-		less = require('gulp-less'),
-        minifyCSS = require('gulp-minify-css'),
-        sourcemaps = require('gulp-sourcemaps');
+	csslint = require('gulp-csslint'),
+  del = require('del'),
+	gutil = require('gulp-util'),
+	less = require('gulp-less'),
+	mandrill = require('mandrill-api/mandrill'),
+  minifyCSS = require('gulp-minify-css'),
+  sourcemaps = require('gulp-sourcemaps');
  
  var customReporter = function(file) {
-  gutil.log(gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.relative));
+  var email = gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.relative),
+    err = '';
+
+  gutil.log(email);
 
   file.csslint.results.forEach(function(result) {
-    gutil.log(result.error.message+' on line '+result.error.line);
+    err = result.error.message+' on line '+result.error.line;
+    email = email + "\n" + err;
+    gutil.log(err);
   });
+
+
+  if (process.env.APPVEYOR && process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL)
+  {
+    var mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_API_KEY);
+    var message = {
+        "text": email,
+        "subject": "CSS Lint",
+        "from_email": "development@guildford.gov.uk",
+        "from_name": "CSS Lint",
+        "to": [{
+                "email": "process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL",
+                "name": "process.env.APPVEYOR_REPO_COMMIT_AUTHOR",
+            }],
+        "track_opens": false,
+        "track_clicks": false,
+        "auto_html": true,
+        "preserve_recipients": true,
+        "tags": [
+            "appveyor"
+        ]
+    };
+    mandrill_client.messages.send({"message": message});
+  }
 };
  
  gulp.task('build-less', function(){

@@ -1,5 +1,7 @@
 environment:
   nodejs_version: "0.12"
+  MANDRILL_API_KEY:
+    secure: YXBWc/5BenK5pSVAluODAvN4UNEoknoVYxXSuMuqJco=
 
 branches:
   except:
@@ -40,7 +42,7 @@ deploy:
 #    artifact: dist-files
 #    on:
 #      branch: master
-      #appveyor_repo_tag: true
+#      appveyor_repo_tag: true
   - provider: S3
     access_key_id:
       secure: uGKkLWDE+5EHq5bGZI9UsK9mjrcaMJxdE6JGC4w5LAY=
