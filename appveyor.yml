@@ -31,17 +31,17 @@ deploy:
 #  - provider: GitHub
 #    release: gbc-front-assets-v$(appveyor_build_version)
 #    auth_token:
-#      secure: LcJ2Fmw10e3vHUnFrUFTRSyEbQKcFMSwANaZH7RvTi0xpdgsIT7EdtRLGV1CdQA5tWDVR3E8TBp3z52gS/ZQe6FD+vAkc7yn4MkxhBMynSA=
+#      secure: XKA3cBKF7XTnVQoyoOHUa50A735FKx70E7jdGlNtkUtncJ+l0fQbveir6X7XSWpa
 #    artifact: dist-files
 #    on:
 #      branch: master
       #appveyor_repo_tag: true
   - provider: S3
     access_key_id:
-      secure: 9w8IfydwZAZhMVxqiYzMmh7fBcjyAZFh2gymY8TX/Vc=
+      secure: uGKkLWDE+5EHq5bGZI9UsK9mjrcaMJxdE6JGC4w5LAY=
     secret_access_key:
-      secure: Vb9C/cW9Z1bh0EtFI4sifQuztzWtoxprNpxdrDXHR1bGVtK3HxXWeiOetgoHmb9i
-    bucket: static.guildford.gov.uk.s3-eu-west-1.amazonaws.com
+      secure: PBroBy13eeFE/m+7EklAwgM/KDWeVWr5L0yE4nIBx7KqBQd6jOgvU/lDeH4LEBvS
+    bucket: static.guildford.gov.uk
     folder: assets
     artifact: dist-files
     set_public: true
