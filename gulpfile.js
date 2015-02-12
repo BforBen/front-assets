@@ -7,7 +7,7 @@ var gulp = require('gulp'),
   minifyCSS = require('gulp-minify-css'),
   sourcemaps = require('gulp-sourcemaps');
  
- var customReporter = function(file) {
+var customReporter = function(file) {
   var email = gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.relative),
     err = '';
 
@@ -44,13 +44,18 @@ var gulp = require('gulp'),
   }
 };
  
- gulp.task('build:less', function(){
+gulp.task('build:less', function(){
   gulp.src('./less/*.less')
     .pipe(less())
     .pipe(gulp.dest('./dist/'));
 });
+
+gulp.task('copy:icons', function(){
+  gulp.src(['./icons/*'])
+    .pipe(gulp.dest('./dist/'));
+});
  
- gulp.task('copy:images', function(){
+gulp.task('copy:images', function(){
   gulp.src(['./images/*.gif', './images/*.jpg', './images/*.png'])
     .pipe(gulp.dest('./dist/'));
 });
@@ -61,7 +66,7 @@ gulp.task('lint:css', function() {
     .pipe(csslint.reporter(customReporter));
 });
  
-gulp.task('minify:css', ['clean:dist'], function() {
+gulp.task('minify:css', function() {
   gulp.src('./css/*.css')
     //.pipe(sourcemaps.init())
     .pipe(minifyCSS())
@@ -70,9 +75,7 @@ gulp.task('minify:css', ['clean:dist'], function() {
 });
 
 gulp.task('clean:dist', function (cb) {
-  del([
-    'dist/*'
-  ], cb);
+  del(['dist/*'], cb);
 });
 
-gulp.task('default', ['copy:images', 'minify:css']);
+gulp.task('default', ['copy:icons', 'copy:images', 'minify:css']);
