@@ -22,10 +22,12 @@ test_script:
 # build: off
 build_script:
   - gulp
-
-artifacts:
-  - path: dist\*
-    name: dist-files
+after_build:
+  - ps: $dist = Resolve-Path .\dist; [IO.Directory]::GetFiles($dist.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($dist.Path.Length + 1) -DeploymentName dist-files }
+  
+#artifacts:
+#  - path: dist\*
+#    name: dist-files
 
 deploy:
 #  - provider: GitHub
@@ -42,6 +44,7 @@ deploy:
     secret_access_key:
       secure: PBroBy13eeFE/m+7EklAwgM/KDWeVWr5L0yE4nIBx7KqBQd6jOgvU/lDeH4LEBvS
     bucket: static.guildford.gov.uk
+    region eu-west-1
     folder: assets
     artifact: dist-files
     set_public: true
