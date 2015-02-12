@@ -20,7 +20,7 @@ var gulp = require('gulp'),
   });
 
 
-  if (process.env.APPVEYOR && process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL)
+  if (process.env.APPVEYOR && process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL && process.env.MANDRILL_API_KEY)
   {
     var mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_API_KEY);
     var message = {
@@ -44,7 +44,7 @@ var gulp = require('gulp'),
   }
 };
  
- gulp.task('build-less', function(){
+ gulp.task('build:less', function(){
   gulp.src('./less/*.less')
     .pipe(less())
     .pipe(gulp.dest('./dist/'));
@@ -74,6 +74,5 @@ gulp.task('clean:dist', function (cb) {
     'dist/*'
   ], cb);
 });
-
 
 gulp.task('default', ['copy:images', 'minify:css']);
