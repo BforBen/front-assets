@@ -189,11 +189,11 @@
 	border-color: #adadad !important;
 }
 .nextbutton {
-	/* background: url("https://fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_right.png") no-repeat center!important; */
+	/* background: url('//fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_right.png') no-repeat center!important; */
 	float: right;
 }
 .previous {
-	/* background: url("https://fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_left.png") no-repeat left!important; */
+	/* background: url('//fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_left.png') no-repeat left!important; */
 	/* float: left; */
 } 
 .submitform {
@@ -400,7 +400,7 @@
 	text-decoration: underline;
 }
 .form-search {
-	background-image: url('http://www.guildford.gov.uk/guildford/images/search.png') !important;
+	background-image: url('//www.guildford.gov.uk/guildford/images/search.png') !important;
 	background-repeat: no-repeat  !important;
 	background-position: 100% 50%  !important;
 }
