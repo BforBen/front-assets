@@ -1,10 +1,4 @@
 /*GBC Custom Header*/
-.customHeaderContainer {
-	width: 98%;
-}
-.clearboth {
-	clear: both;
-}
 .hrule {
 	height: 100px;
 	width: 103%;
@@ -31,6 +25,12 @@
 .breadcrumb {
 	font-size: 1.2em;
 	margin-top: 15px;
+}
+.breadcrumb > ol {
+	display: inline;
+}
+.breadcrumb > ol > li {
+	display: inline;
 }
 .betaphase-banner {
 	background: #f47738;
@@ -83,11 +83,11 @@
 	padding-bottom: 5px;
 	margin-bottom: 10px;
 }
-.page-legacyform .formouter .xheader h1 {
-	color: #fff;
-}
 .page-legacyform .formouter .bws h1 {
 	color: #454545;
+}
+.page-legacyform .formouter .xheader h1 {
+	color: #fff;
 }
  .xpanel {
 	margin-bottom: 10px;
@@ -314,9 +314,9 @@
 	padding: 6px 10px;
 }
 #sessionBadge .btn.btn-inverse {
-	background-color: #fff;
-	color: #0088cc;
-	border-color: #0088cc;
+	background-color: #fff !important;
+	color: #08c !important;
+	border-color: #08c !important;
 }
 .navbar .btn:hover,
 .navbar .btn:focus,
