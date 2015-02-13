@@ -62,8 +62,8 @@ gulp.task('copy:images', function(){
 
 gulp.task('lint:css', function() {
   gulp.src('./css/*.css')
-    .pipe(csslint())
-    .pipe(csslint.reporter(customReporter));
+    .pipe(csslint('csslintrc.json'))
+    .pipe(csslint.reporter());
 });
  
 gulp.task('minify:css', function() {

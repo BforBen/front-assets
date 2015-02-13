@@ -37,10 +37,6 @@
 .betaphase-banner {
 	background: #f47738;
 	padding: 8px 15px;
-	padding-top: 8px;
-	padding-right: 15px;
-	padding-bottom: 8px;
-	padding-left: 15px;
 	margin-top: 15px;
 	border-radius: 4px;
 }
@@ -48,11 +44,7 @@
 	display: inline-block;
 	background: #f47738;
 	color: #fff;
-	font-family: Arial,sans-serif;
 	font-size: 16px;
-	line-height: 1.25;
-	font-weight: 300;
-	text-transform: none;
 	font-weight: 700;
 	line-height: 1;
 	text-transform: uppercase;
@@ -73,17 +65,17 @@
 
 /*GBC Custom Bootstrap "Pot" */
 .xheader {
-	margin-bottom: 20px !important;
-	border-radius: 4px !important;
-	background-color: #138193 !important;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #138193;
 }
 .xheader h1 {
-	border: none !important;
-	margin-bottom: 0px !important;
+	border: none;
+	margin-bottom: 0;
 	/* padding: 0px 0 0 0px !important; */
-	padding-left: 10px !important;
-	color: white !important;
-	font-weight: bold !important;
+	padding-left: 10px;
+	color: #fff;
+	font-weight: 700;
 }
 .bws h1 {
 	color: #454545;
@@ -91,77 +83,80 @@
 	font-weight: normal;
 	border-bottom: 5px solid #138193;
 	padding-bottom: 5px;
-	margin-bottom: 10px !important;
+	margin-bottom: 10px;
+}
+.page-legacyform .formouter h1 {
+	color: #fff;
 }
  .xpanel {
-	margin-bottom: 10px !important;
+	margin-bottom: 10px;
 	background-color: #fff;
-	border: 1px solid transparent !important;
+	border: 1px solid transparent;
 	border-radius: 4px;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
-	padding: 10px 10px 10px 15px !important;
+	padding: 10px 10px 10px 15px;
 	/* width: 97% !important; */
 }
 .xpanel-default {
 	border-color: #C1DAE1;
 }
 .xpanel-heading {
-	font-weight:bold !important;
+	font-weight: 700;
 	padding: 10px 15px;
 	border-bottom: 1px solid transparent;
 	/* border-top-left-radius: 3px;
 	border-top-right-radius: 3px; */
 	background-color: #E6F0F3;
-	border-color: #C1DAE1 !important;
+	border-color: #C1DAE1;
 }
 .xalert {
-	padding: 15px !important;
+	padding: 15px;
 	/* margin-bottom: 20px; */
 	border: 1px solid transparent;
 	border-radius: 4px;
-	font-weight: bold !important;
+	font-weight: 700;
 }
 .xalert-success {
-	color: #3c763d !important;
+	color: #3c763d;
 	background-color: #dff0d8;
 	border-color: #d6e9c6;
 }
 .xalert-info {
-	color: #31708f !important;
+	color: #31708f;
 	background-color: #d9edf7;
 	border-color: #bce8f1;
 }
 .xalert-warning {
-	color: #8a6d3b !important;
+	color: #8a6d3b;
 	background-color: #fcf8e3;
 	border-color: #faebcc;
 }
 .xalert-danger {
-	color: #a94442 !important;
+	color: #a94442;
 	background-color: #f2dede;
 	border-color: #ebccd1;
 }
 
 /*GBC Custom FORMS*/
 .aftextinput, .aftextarea, .afselectbox, .renderbuttonstable select {
-	border: 1px solid #ccc !important;
+	border: 1px solid #ccc;
 	float: none;
 	font-size: 14px;
 	padding: 0.2em;
-	border-radius: 4px !important;
-	-webkit-border-radius: 4px !important;
-	-moz-border-radius: 4px !important;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	/* overflow: auto; */
-	width: 100% !important;
+	width: 100%;
 }
 .afselectbox select {
-	border: 1px solid #ccc !important;
+	border: 1px solid #ccc;
 }
 .afnavbuttons {
-	background-color: #138193 !important;
+	background-color: #138193;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -169,10 +164,10 @@
 }
 .genericsubmit.navbuttons {
 	/* NEW */
-	padding: 6px 12px !important;
+	padding: 6px 12px;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 4px !important;
+	border-radius: 4px;
 	color: #333;
 	background-color: #ffffff;
 	/* border-color: #ccc !important; */
@@ -184,9 +179,9 @@
 .nextbutton:hover,
 .nextbutton:focus,
 .nextbutton:active {
-	color: #333333 !important;
-	background-color: #e6e6e6 !important;
-	border-color: #adadad !important;
+	color: #333333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
 }
 .nextbutton {
 	/* background: url('//fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_right.png') no-repeat center!important; */
@@ -197,45 +192,42 @@
 	/* float: left; */
 } 
 .submitform {
-	float: right !important;
-	color: #ffffff !important;
-	background-color: #5cb85c !important;
-	border-color: #fff !important;
+	float: right;
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #fff;
 }
 .submitform:hover,
 .submitform:focus,
 .submitform:active,
 .submitform.active{
-	color: #ffffff !important;
-	background-color: #449d44 !important;
-	border-color: #fff !important;
+	background-color: #449d44;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-	color: #ffffff;
+	color: #fff;
 	background-color: #449d44;
 	border-color: #398439;
 }
  .cancelbutton {
-	color: #ffffff !important;
-	background-color: #d9534f !important;
+	color: #fff;
+	background-color: #d9534f;
 	/* border-color: #d43f3a; */
 }
 .cancelbutton:hover,
 .cancelbutton:focus,
 .cancelbutton:active,
 .cancelbutton.active {
-	color: #ffffff;
-	background-color: #c9302c !important;
+	background-color: #c9302c;
 	/* border-color: #ac2925; */
 }
 
 /* BASE FIRMSTEP OVERRIDING */
 .page-legacyform .progressbartoptable .inactivenav .progress1nonclickable {
-	background-color: #138193 !important;
+	background-color: #138193;
 }
 .progressbartoptable .activenav .progress1nonclickable, 
 .progressbartoptable .inactivenav .progress1nonclickable, 
@@ -245,8 +237,8 @@
 	display: inline-block;
 	padding: 6px 12px;
 	/* margin-bottom: 0; */
-	margin: 0px !important;
-	font-size: 12px !important;
+	margin: 0;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 1.42857143;
 	text-align: center;
@@ -258,11 +250,11 @@
 	-ms-user-select: none;
 	user-select: none;
 	background-image: none;
-	border: 1px solid transparent !important;
-	border-radius: 4px !important;
-	color: #fff !important;
-	background-color: #138193 !important;
-	border-color: #0D5A67 !important;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #138193;
+	border-color: #0D5A67;
 	padding: 2px 6px;
 	font-size: 12px;
 	line-height: 1.5;
@@ -273,8 +265,8 @@
 	display: inline-block;
 	padding: 6px 12px;
 	/* margin-bottom: 0; */
-	margin: 0px !important;
-	font-size: 12px !important;
+	margin: 0;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 1.42857143;
 	text-align: center;
@@ -286,21 +278,21 @@
 	-ms-user-select: none;
 	user-select: none;
 	background-image: none;
-	border: 1px solid transparent !important;
-	border-radius: 4px !important;
-	color: #333 !important;
-	background-color: #fff !important;
-	border-color: #ccc !important;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
 	padding: 2px 6px;
 	font-size: 12px;
 	line-height: 1.5;
 	border-radius: 3px;
 }
 .page-legacyform .activenav .progress1.activesection+.afternavbutton:after {
-	border-style: none !important;
+	border-style: none;
 }
 .page-legacyform .inactivenav .afternavbutton:after {
-	border-style: none !important;
+	border-style: none;
 }
 .page-legacyform .content.container .aftextinput, 
 .page-legacyform .content.container .aftextarea,
@@ -310,21 +302,21 @@
 .page-legacyform .afselectbox, .page-legacyform .renderbuttonstable select,
 .page-legacyform .renderbuttonstablesidenav select,
 .page-legacyform .bws.control input.SelectOne {
-	border: 1px solid #aaa !important;
+	border: 1px solid #aaa;
 }
 .page-legacyform .progressbartoptable .activenav .progress1,
 .page-legacyform .progressbartoptable .inactivenav .progress1,
 .page-legacyform .progressbartoptable .activenav .progressvalid,
 .page-legacyform .progressbartoptable .inactivenav .progressvalid 
 {
-	background-color: #138193 !important;
-	border-color: #0D5A67 !important;
+	background-color: #138193;
+	border-color: #0D5A67;
 }
 .page-legacyform .content.container .formouter,
 .page-legacyform .reviewform,
 .page-legacyform #container-padding .formouter,
 .page-legacyform .reviewform {
-	margin: 0px auto !important;
+	margin: 0 auto;
 	display: block;
 }
 
@@ -339,22 +331,21 @@
 .navbar-header {
 	display: none;
 }
-.login-link {
-	color: #138193 !important;
+#toolbar .login-link {
+	color: #138193;
 }
 .navbar{
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 .navbar-inverse {
 	background-color: #fff;
 	border: none;
-	min-height: 0px !important;
-	max-height: 0px !important;
-	position: absolute !important;
-	/* margin-top: -30px; */
+	min-height: 0;
+	max-height: 0;
+	position: absolute;
 }
 .navbar .btn-group .btn-primary {
-	color: #0088cc;
+	color: #08c;
 	background-color: #fff;
 	border-color: #ccc ;
 	padding: 6px 10px;
@@ -373,11 +364,11 @@
 	background-image: none;
 	/* -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125); */
 	/* box-shadow: inset 0px 0px 10px rgba(19, 129, 147, 0.7); */
-	 background-color: #0088cc !important;
-	 color: #fff !important;
+	 background-color: #08c;
+	 color: #fff;
 }
 .navbar .btn-group .btn-primary.active .caret {
-	display: none !important;
+	display: none;
 }
 .service-groups a.fsservice-pretty-link:link,
 .service-groups a.fsservice-pretty-link:visited {
@@ -399,15 +390,15 @@
 .leaf h2:hover{
 	text-decoration: underline;
 }
-.form-search {
-	background-image: url('//www.guildford.gov.uk/guildford/images/search.png') !important;
-	background-repeat: no-repeat  !important;
-	background-position: 100% 50%  !important;
-}
 .lowlight {
 	background: whitesmoke;
 	padding: 0 1em .75em;
 	border-radius: .5em;
 	border: .1em solid whitesmoke;
 	margin-bottom: .9em;
+}
+.form-search {
+	background-image: url('//www.guildford.gov.uk/guildford/images/search.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
 }
