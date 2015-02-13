@@ -8,8 +8,6 @@
 .hrule {
 	height: 100px;
 	width: 103%;
-	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
 	box-shadow: 0 1px 10px rgba(0,0,0,.1);
 	background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
@@ -93,7 +91,6 @@
 	background-color: #fff;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
 	padding: 10px 10px 10px 15px;
 	/* width: 97% !important; */
@@ -145,9 +142,6 @@
 	font-size: 14px;
 	padding: 0.2em;
 	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	/* overflow: auto; */
 	width: 100%;
@@ -158,12 +152,9 @@
 .afnavbuttons {
 	background-color: #138193;
 	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	padding: 10px;
 }
 .genericsubmit.navbuttons {
-	/* NEW */
 	padding: 6px 12px;
 	border-style: solid;
 	border-width: 1px;
@@ -187,10 +178,6 @@
 	/* background: url('//fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_right.png') no-repeat center!important; */
 	float: right;
 }
-.previous {
-	/* background: url('//fs-filestore-eu.s3.amazonaws.com/guildford/Self/images/button_left.png') no-repeat left!important; */
-	/* float: left; */
-} 
 .submitform {
 	float: right;
 	color: #fff;
@@ -233,14 +220,12 @@
 .progressbartoptable .inactivenav .progress1nonclickable, 
 .progressbartoptable .activenav .progress1, 
 .progressbartoptable .inactivenav .progress1, 
-.progressbartoptable .inactivenav .progressvalid  {
+.progressbartoptable .inactivenav .progressvalid,
+.progressbartoptable .inactivenav .progress0nonclickable,
+.progressbartoptable .inactivenav .progress0  {
 	display: inline-block;
-	padding: 6px 12px;
-	/* margin-bottom: 0; */
 	margin: 0;
-	font-size: 12px;
 	font-weight: 400;
-	line-height: 1.42857143;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
@@ -249,44 +234,19 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	background-image: none;
-	border: 1px solid transparent;
+	border: 1px solid #0D5A67;
 	border-radius: 4px;
 	color: #fff;
-	background-color: #138193;
-	border-color: #0D5A67;
+	background: #138193;
 	padding: 2px 6px;
 	font-size: 12px;
 	line-height: 1.5;
-	border-radius: 3px;
 }
 .progressbartoptable .inactivenav .progress0nonclickable,
 .progressbartoptable .inactivenav .progress0 {
-	display: inline-block;
-	padding: 6px 12px;
-	/* margin-bottom: 0; */
-	margin: 0;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 1.42857143;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-image: none;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	color: #333;
-	background-color: #fff;
 	border-color: #ccc;
-	padding: 2px 6px;
-	font-size: 12px;
-	line-height: 1.5;
-	border-radius: 3px;
+	color: #333;
+	background: #fff;
 }
 .page-legacyform .activenav .progress1.activesection+.afternavbutton:after {
 	border-style: none;
@@ -301,7 +261,7 @@
 .page-legacyform .dataelr .aftextinput, .page-legacyform .aftextarea,
 .page-legacyform .afselectbox, .page-legacyform .renderbuttonstable select,
 .page-legacyform .renderbuttonstablesidenav select,
-.page-legacyform .bws.control input.SelectOne {
+.page-legacyform .bws.control .SelectOne {
 	border: 1px solid #aaa;
 }
 .page-legacyform .progressbartoptable .activenav .progress1,
@@ -314,7 +274,7 @@
 }
 .page-legacyform .content.container .formouter,
 .page-legacyform .reviewform,
-.page-legacyform #container-padding .formouter,
+#container-padding .formouter,
 .page-legacyform .reviewform {
 	margin: 0 auto;
 	display: block;
@@ -350,8 +310,7 @@
 	border-color: #ccc ;
 	padding: 6px 10px;
 }
-#SelfToolbar #sessionBadge .btn.btn-inverse, 
-#toolbar #sessionBadge .btn.btn-inverse {
+#sessionBadge .btn.btn-inverse {
 	background-color: #fff;
 	color: #0088cc;
 	border-color: #0088cc;
@@ -379,7 +338,7 @@
 	margin-bottom: 8px;
 	color: #0088cc;
 }
-.service-groups ul.menu li {
+.service-groups .menu li {
 	width: 32.5%;
 }
 .leaf h2{
