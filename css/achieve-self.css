@@ -83,8 +83,11 @@
 	padding-bottom: 5px;
 	margin-bottom: 10px;
 }
-.page-legacyform .formouter h1 {
+.page-legacyform .formouter .xheader h1 {
 	color: #fff;
+}
+.page-legacyform .formouter .bws h1 {
+	color: #454545;
 }
  .xpanel {
 	margin-bottom: 10px;
@@ -269,7 +272,7 @@
 .page-legacyform .progressbartoptable .activenav .progressvalid,
 .page-legacyform .progressbartoptable .inactivenav .progressvalid 
 {
-	background-color: #138193;
+	background-color: #138193 !important;
 	border-color: #0D5A67;
 }
 .page-legacyform .content.container .formouter,
@@ -327,7 +330,7 @@
 	 color: #fff;
 }
 .navbar .btn-group .btn-primary.active .caret {
-	display: none;
+	display: none !important;
 }
 .service-groups a.fsservice-pretty-link:link,
 .service-groups a.fsservice-pretty-link:visited {
