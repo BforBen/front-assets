@@ -7,7 +7,8 @@ layout: default
 </div>
 
 There are different versions of the pattern library.
-
-* [Version 2](v2) <span class="label label-retirement">RETIRING</span>
-* [Version 3](v3) <span class="label label-live">LIVE</span>
-* [Version 4](v4) <span class="label label-alpha">ALPHA</span>
+<ul class="list-group list-contents">
+    <li class="list-group-item"><a href="v2">Version 2</a> <span class="label label-retirement">RETIRING</span></li>
+    <li class="list-group-item"><a href="v3">Version 3</a> <span class="label label-live">LIVE</span></li>
+    <li class="list-group-item"><a href="v4">Version 4</a> <span class="label label-alpha">ALPHA</span></li>
+</ul>
