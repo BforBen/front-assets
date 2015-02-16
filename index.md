@@ -7,6 +7,7 @@ layout: default
 </div>
 
 There are different versions of the pattern library.
+
 <ul class="list-group list-contents">
     <li class="list-group-item"><a href="v2">Version 2</a> <span class="label label-retirement">RETIRING</span></li>
     <li class="list-group-item"><a href="v3">Version 3</a> <span class="label label-live">LIVE</span></li>
