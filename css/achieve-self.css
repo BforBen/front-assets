@@ -28,9 +28,11 @@
 }
 .breadcrumb > ol {
 	display: inline;
+	margin: 0;
 }
 .breadcrumb > ol > li {
 	display: inline;
+	padding: 0;
 }
 .betaphase-banner {
 	background: #f47738;
