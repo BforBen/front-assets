@@ -100,6 +100,15 @@
 	padding: 10px 10px 10px 15px;
 	/* width: 97% !important; */
 }
+
+.xpanel >.subformel{
+padding: 10px 10px 10px 15px;
+border: 1px solid #C1DAE1;
+border-radius: 4px;
+}
+
+
+
 .xpanel-default {
 	border-color: #C1DAE1;
 }
@@ -253,12 +262,21 @@
 	color: #333;
 	background: #fff;
 }
+
+/*using this*/
+.afternavbutton:after{
+border-style: none !important;
+}
+/*instead of this*/
+/*
 .page-legacyform .activenav .progress1.activesection+.afternavbutton:after {
 	border-style: none;
 }
 .page-legacyform .inactivenav .afternavbutton:after {
 	border-style: none;
 }
+*/
+
 .page-legacyform .content.container .aftextinput, 
 .page-legacyform .content.container .aftextarea,
 .page-legacyform .content.container .afselectbox,
