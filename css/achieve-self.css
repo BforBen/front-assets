@@ -43,6 +43,7 @@
 }
 .betaphase-banner a {
 	color: #333;
+	text-decoration: underline;
 }
 .betaphase-banner a:hover {
 	color: #6f777b;
