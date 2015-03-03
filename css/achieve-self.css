@@ -39,6 +39,17 @@
 	padding: 8px 15px;
 	margin-top: 15px;
 	border-radius: 4px;
+	font-size: 110%;
+}
+.betaphase-banner a {
+	color: #333;
+}
+.betaphase-banner a:hover {
+	color: #6f777b;
+}
+.betaphase-banner a:focus {
+	background-color: #ffbf47;
+	outline: 3px solid #ffbf47;
 }
 .beta-tag {
 	display: inline-block;
