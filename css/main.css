@@ -15,6 +15,9 @@
 .not-live .navbar-gbc {
 	box-shadow: none;
 }
+.internal .navbar-gbc {
+    background-color: #1e88e5;
+}
 .navbar-gbc .navbar-toggle .icon-bar
 {
     background-color: #fff;
