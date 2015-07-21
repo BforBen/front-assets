@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>GuildfordGovUK.FrontAssetsKit</id>
+        <version>1.0.0</version>
+        <authors>Ben Cheetham</authors>
+        <licenseUrl>https://github.com/GuildfordBC/front-assets/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/GuildfordBC/front-assets</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A collection of CSS and scripts for guildford.gov.uk</description>
+        <summary />
+        <copyright>Guildford Borough Council</copyright>
+        <language>en-GB</language>
+    </metadata>
+    <files>
+        <file src="app/assets/css/main.css" target="Assets/main.css" />
+        <file src="app/views/**" target="Views/Shared/" />
+    </files>
+</package>
