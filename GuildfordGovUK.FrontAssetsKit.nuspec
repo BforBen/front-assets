@@ -13,7 +13,6 @@
         <language>en-GB</language>
     </metadata>
     <files>
-        <file src="app/assets/css/main.css" target="Assets/main.css" />
-        <file src="app/views/**" target="Views/Shared/" />
+        <file src="css/main.css" target="Assets/main.css" />
     </files>
 </package>
