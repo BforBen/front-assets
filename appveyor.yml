@@ -2,6 +2,8 @@ environment:
   nodejs_version: "0.12"
   MANDRILL_API_KEY:
     secure: YXBWc/5BenK5pSVAluODAvN4UNEoknoVYxXSuMuqJco=
+  MYGET_KEY:
+    secure: 3HSNmGS95yv4VGx8Mi2S+6xdKZ1Qkvr0P3tGYWYJu235GUGWUyXbHx1iZ4gmqeP2
 
 branches:
   except:
