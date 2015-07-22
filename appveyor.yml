@@ -31,6 +31,7 @@ build_script:
   - gulp
 after_build:
   - ps: $dist = Resolve-Path .\dist; [IO.Directory]::GetFiles($dist.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($dist.Path.Length + 1) -DeploymentName dist-files }
+  - ps: .\build.ps1
   
 #artifacts:
 #  - path: dist\*
