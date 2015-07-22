@@ -24,8 +24,8 @@ test_script:
   - npm test
 
 # build: off
-build:
-  verbosity: detailed
+# build:
+#   verbosity: detailed
   
 build_script:
   - gulp
