@@ -13,6 +13,6 @@
         <language>en-GB</language>
     </metadata>
     <files>
-        <file src="css/main.css" target="Assets/main.css" />
+        <file src="css/main.css" target="content/Assets/main.css" />
     </files>
 </package>
