@@ -365,3 +365,7 @@ input:focus, select:focus, textarea:focus {
 .eformstext {
     display: none !important;
 }
+.bws.colspan.debugfield {background-color:#E0DD1B;}
+.bws.colspan.debugfield, .debugfield {display:none;}
+#mapOuter label { width: auto; display:inline; }
+#mapOuter img { max-width: none; max-height: none; margin: 0 !important; }
