@@ -1,0 +1,371 @@
+/*--- Color Schemes ---*/
+/*
+Green: 	#377A1F #145412 #E3F1E2
+
+Red: 	#D87573 #8A1E18 #F1CECA
+
+Blue: 	#2355AD #1F2569 #F0F2F8
+
+/* Buttons */
+.genericsubmit, .all-buttons-generic input[type="submit"], .genericsubmit, .all-buttons-generic button, .renderformbuttons, .deletesubformbutton {
+	background-color: #377A1F!important;
+	background-image: -moz-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -ms-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -webkit-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -o-linear-gradient(top, #377A1F, #145412)!important;
+	border: 1px solid #145412!important;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: white !important;
+	font-weight: bold;
+	margin: 3px 5px 0 0;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px #808080;
+	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px #808080;
+	-ms-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px #808080;
+	-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px #808080;
+	width: auto;
+}
+
+.genericsubmit.navbuttons.cancelbutton {
+	background-color: #303030;
+    background-image: -moz-linear-gradient(top , #505050, #101010) !important;
+	background-image: -ms-linear-gradient(top , #505050, #101010) !important;
+	background-image: -webkit-linear-gradient(top , #505050, #101010) !important;
+	background-image: -o-linear-gradient(top , #505050, #101010) !important;
+    border: 1px solid #101010 !important;
+	float: left;
+}
+
+.genericsubmit.navbuttons.cancelbutton:active {
+    background-image: -moz-linear-gradient(top , #101010, #101010) !important;
+	background-image: -ms-linear-gradient(top , #101010, #101010) !important;
+	background-image: -webkit-linear-gradient(top , #101010, #101010) !important;
+	background-image: -o-linear-gradient(top , #101010, #101010) !important;
+}
+
+.genericsubmit:active, .renderformbuttons:active {
+	background: #145412;
+	background-image: -moz-linear-gradient(top, #145412, #145412)!important;
+	background-image: -ms-linear-gradient(top, #145412, #145412)!important;
+	background-image: -webkit-linear-gradient(top, #145412, #145412)!important;
+	background-image: -o-linear-gradient(top, #145412, #145412)!important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    -moz-box-shadow: none;
+	border: 1px solid #145412!important;
+}
+
+.genericsubmit.navbuttons.nextbutton, .genericsubmit.navbuttons.submitform {
+	float: right;
+}
+
+/* Next and Previous Buttons */
+.genericsubmit.navbuttons.nextbutton {
+	background: url("images/button_right.png") no-repeat center!important;
+	background-color: transparent!important;
+	border: none!important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	-moz-box-shadow: none;
+	color: black !important;
+    padding: 8px 34px 9px 21px;
+	border-radius:0;	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	margin: 0;
+}
+
+.genericsubmit.navbuttons.nextbutton:active{
+	background: url("images/button_right_active.png") no-repeat center!important;
+}
+
+.genericsubmit.navbuttons.previous {
+	background: url("images/button_left.png") no-repeat left!important;
+	background-color: transparent!important;
+	border: none!important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	-moz-box-shadow: none;
+	color: black !important;
+    padding: 8px 18px 9px 18px;
+	border-radius:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	margin: 0 20px 0 0;
+	float: left;
+}
+
+.genericsubmit.navbuttons.previous:active{
+	background: url("images/button_left_active.png") no-repeat left!important;
+}
+
+.afnavbuttons {
+	background-color: #E3F1E2;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 12px 5px 15px 5px;
+	height: 31px;
+}
+
+/* Repeatable buttons */
+.repeatablescrollbar {
+	overflow: visible;
+}
+
+.repeatableouter {
+	padding-right: 0;
+}
+
+.repeatablebutton {
+    clear: both;
+    position: relative;
+}
+
+/*--- Start of various progress bar layouts ---*/
+/* Progress bar - layout on the left */
+
+.sectionnametable .progressol .progress1, .sectionnametable .progressol .progress1nonclickable, .sectionnametable .progressol .progressvalid {
+	background-color: #377A1F!important;
+	background-image: -moz-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -ms-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -webkit-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -o-linear-gradient(top, #377A1F, #145412)!important;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px #808080;
+	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px #808080;
+	-ms-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px #808080;
+	-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px #808080;
+	border:2px solid #145412;
+	color:white;
+	font-size:1em;
+	font-weight:bold;
+	padding: 5px;
+	width:auto;border-radius:0;
+	text-transform: none;
+	margin:0 0 0.3em 1em;
+	font-family: Arial,Helvetica,Verdana;
+}
+
+.sectionnametable .progressol .progress0, .sectionnametable .progressol .progress0nonclickable {
+	margin: 0 0 0.3em 1em;
+	font-size:1em;
+	padding:5px 0;
+	background-color:#FFFFFF!important;
+	border-radius:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	color:#404040;
+	font-weight:bold;
+	text-transform:none;
+	border:2px solid #7B869E;
+    font-family: Arial,Helvetica,Verdana;
+}
+
+/*---- Progress bar - layout on the top ----*/
+.progressbartoptable .activenav .progress1nonclickable, .progressbartoptable .inactivenav .progress1nonclickable, .progressbartoptable .activenav .progress1, .progressbartoptable .inactivenav .progress1, .progressbartoptable .inactivenav .progressvalid {
+	background-color: #377A1F!important;
+	background-image: -moz-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -ms-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -webkit-linear-gradient(top, #377A1F, #145412)!important;
+	background-image: -o-linear-gradient(top, #377A1F, #145412)!important;
+	border:2px solid #145412;
+	color:white!important;
+	font-size:1em;
+	font-weight:bold;
+	padding:5px;
+	width:auto;
+	border-radius:0;	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	text-transform: uppercase;
+	margin:0 0 0 0.3em;
+	box-shadow: 1px 1px 1px #808080, 0 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-moz-box-shadow: 1px 1px 1px #808080, 0 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-webkit-box-shadow: 1px 1px 1px #808080, 0 1px 1px rgba(255, 255, 255, 0.2) inset;
+	text-shadow: none!important;
+	font-family: Arial,Helvetica,Verdana;
+}
+
+.progressbartoptable .inactivenav .progress0nonclickable, .progressbartoptable .inactivenav .progress0  {
+	margin: 0 0 0 0.3em;
+	font-size:1em;
+	padding:5px;
+	background-color:#FFFFFF!important;
+	border-radius:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	color:#404040;
+	font-weight:bold;
+	text-transform: uppercase;
+	border:2px solid #67738C;
+	box-shadow: 1px 1px 1px #808080;
+	-moz-box-shadow: 1px 1px 1px #808080;
+	-webkit-box-shadow: 1px 1px 1px #808080;
+	font-family: Arial,Helvetica,Verdana;
+}
+
+
+.progressbartoptable ol {
+	padding: 0;
+}
+
+/* end of progressbar CSS */
+
+/* Adjust the section name */
+.sectionnamerender {
+    color: black;
+    font-size: 1.4em;
+    text-align: right;
+    text-decoration: underline;
+	font-weight: normal;
+}
+
+/* Center the form, and reduce the width */
+.formouter, .reviewform {
+    margin: 30px auto;
+    max-width: 980px;
+	min-width: 600px;
+}
+
+.renderbuttonstable, .renderbuttonstablesidenav {
+    border: none;
+}
+
+/* Input boxes and field labels, alignment and colours */
+.aftextinput, .aftextarea , .afselectbox, .renderbuttonstable select {
+    border: 2px solid #67738C !important;
+    float: none;
+    font-size: 14px;
+    padding: 0.2em;
+}
+
+.renderbuttonstable label, .fieldlabel, .fieldlabel, .nondatael {
+    color: #454545 !important;
+    font-weight: normal !important;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: #E8ECF4;
+}
+
+.nondatael {
+	padding: 0;
+}
+.af-form-textarea .aftextarea {
+	min-width: 60%;
+	max-width: 100%;
+	min-height:  80px;
+}
+
+/* Mandatory and validation warnings */
+.warning {
+    background: none repeat scroll 0 0 #FFEDED;
+    color: #8E0200;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 0 0 10px;
+    min-width: 230px;
+    padding: 0.5em;
+    text-align: center;
+    width: 98%;
+}
+
+.mandatory {
+    background-color: #FFF3F2;
+    border: 2px solid #FF0000;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+	padding: 6px 10px;
+}
+
+/* Expand Calendar */
+.caldate {
+    padding: 0.5em !important;
+}
+
+/*--- Header ---*/
+
+#af_header .header_logo {
+	margin:12px 0 0 15px;
+	float:left;
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+}
+
+#af_header .header_button {
+	background:transparent;
+	float:left;
+	margin-left: 20px;
+}
+
+#masthead {
+	clear:both;
+	-moz-box-shadow:0 4px 4px #909090;
+	-webkit-box-shadow:0 4px 4px #909090;
+	box-shadow: 0 3px 5px -2px #909090;
+	border-bottom: 2px solid #C6C6C6;
+	height: 5px
+}
+
+#toplogo {
+	display: none;
+}
+
+/*--- Footer ---*/
+#simple_footer {
+	clear:both;
+	float:left;
+	font-size:90%;
+	height: 115px;
+	width:100%;
+	-moz-box-shadow:0 -3px 3px #909090;
+	-webkit-box-shadow:0 -3px 3px #909090;
+	box-shadow:0 -3px 5px #909090;
+	border-top: 2px solid #C6C6C6;
+	background: url("images/footer_gradient.png") repeat scroll 0 0 transparent;
+	margin-top: 15px;
+}
+
+/* Alighnment and padding for various elements */
+.subformel .datael {
+	padding: 0!important;
+}
+
+.formouter h2, h2 {
+    border: medium none;
+    padding: 0 0 0.5em;
+}
+
+.formouter h1, h1 {
+	color: black;
+	font-size: 2em;
+}
+
+.leftlabel.fieldlabel, .nondatael {
+    font-size: 1.2em;
+}
+
+.bws.checkbox, .bws.radio {
+    font-size: 1.2em;
+}
+
+.bws.colspan.clear {
+    padding-bottom: 8px;
+}
+/*--- Added by Guildford ---*/
+
+.eformstext {
+    display: none !important;
+}
+.bws.colspan.debugfield {background-color:#E0DD1B;}
+.bws.colspan.debugfield, .debugfield {display:none;}
+#mapOuter label { width: auto; display:inline; }
+#mapOuter img { max-width: none; max-height: none; margin: 0 !important; }
