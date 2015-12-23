@@ -295,3 +295,67 @@ font-size: 19px;
 		display: block;
 	}
 }
+
+.legacy body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.legacy .navbar-brand {
+    padding: 10px 15px;
+}
+
+.legacy .navbar-gbc {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+}
+
+.legacy .navbar-nav > li > a {
+    color: #212121;
+}
+
+.legacy .nav > li > span {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.legacy .navbar-nav > li > span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.legacy div.breadcrumb {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 0;
+}
+.legacy ol.breadcrumb {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.legacy div.breadcrumb > span {
+    font-weight: bold;
+}
+.legacy .breadcrumb a {
+    color: #08c;
+    text-decoration: none;
+}
+.legacy .breadcrumb a:hover {
+    text-decoration: underline;
+    color: #005580;
+}
+.legacy .breadcrumb > li+li:before {
+  content: '/';
+  color: #0b0c0c;
+}
+.legacy footer {
+    background-color: #fff;
+}
+@media (min-width: 768px) {
+    .legacy .navbar-nav > li > span {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
