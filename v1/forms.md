@@ -579,6 +579,8 @@ title: Forms
     <form>
       <div class="form-group has-error">
         <label class="control-label" for="inputError1">Input with error</label>
+        <span class="help-block help-info">Additional help text for the input</span>
+        <span class="help-block">You must enter a value</span>
         <input type="text" class="form-control" id="inputError1">
       </div>
       <div class="has-error">
@@ -594,6 +596,8 @@ title: Forms
 {% highlight html %}
 <div class="form-group has-error">
   <label class="control-label" for="inputError1">Input with error</label>
+  <span class="help-block help-info">Additional help text for the input</span>
+  <span class="help-block">You must enter a value</span>
   <input type="text" class="form-control" id="inputError1">
 </div>
 <div class="has-error">
@@ -606,39 +610,8 @@ title: Forms
 </div>
 {% endhighlight %}
 
-  <h2 id="forms-control-sizes">Control sizing</h2>
-  <p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
-
-  <h3>Height sizing</h3>
-  <p>Create taller or shorter form controls that match button sizes.</p>
-  <div class="bs-example bs-example-control-sizing" data-example-id="form-control-height-sizes">
-    <form>
-      <div class="controls">
-        <input class="form-control input-lg" type="text" placeholder=".input-lg">
-        <input type="text" class="form-control" placeholder="Default input">
-        <input class="form-control input-sm" type="text" placeholder=".input-sm">
-
-        <select class="form-control input-lg">
-          <option value="">.input-lg</option>
-        </select>
-        <select class="form-control">
-          <option value="">Default select</option>
-        </select>
-        <select class="form-control input-sm">
-          <option value="">.input-sm</option>
-        </select>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<input class="form-control input-lg" type="text" placeholder=".input-lg">
-<input class="form-control" type="text" placeholder="Default input">
-<input class="form-control input-sm" type="text" placeholder=".input-sm">
-
-<select class="form-control input-lg">...</select>
-<select class="form-control">...</select>
-<select class="form-control input-sm">...</select>
-{% endhighlight %}
+<h2 id="forms-control-sizes">Control sizing</h2>
+<p>Set widths using grid column classes like <code>.col-lg-*</code>.</p>
 
 <h3>Column sizing</h3>
 <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
