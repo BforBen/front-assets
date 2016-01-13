@@ -25,6 +25,7 @@ title: Forms
 	</form>
 	<p><a class="btn btn-lg btn-link" href="#">Cancel</a></p>
 </div>
+
 {% highlight html %}
 <form>
 	<div class="form-group">
@@ -73,6 +74,7 @@ title: Forms
       <button type="submit" class="btn btn-default">Send invitation</button>
     </form>
   </div><!-- /example -->
+  
 {% highlight html %}
 <form class="form-inline">
   <div class="form-group">
@@ -151,75 +153,12 @@ title: Forms
 </form>
 {% endhighlight %}
 
-  <h2 id="forms-horizontal">Horizontal form</h2>
-  <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn't have to be a <code>&lt;form&gt;</code>). Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
-  <div class="bs-example" data-example-id="simple-horizontal-form">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Sign in</button>
-        </div>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Remember me
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </div>
-</form>
-{% endhighlight %}
+<h2 id="forms-controls">Supported controls</h2>
+<p>Examples of standard form controls supported in an example form layout.</p>
 
+<h3>Inputs</h3>
+<p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
 
-  <h2 id="forms-controls">Supported controls</h2>
-  <p>Examples of standard form controls supported in an example form layout.</p>
-
-  <h3>Inputs</h3>
-  <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
   <div class="bs-callout bs-callout-danger" id="callout-input-needs-type">
     <h4>Type declaration required</h4>
     <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
