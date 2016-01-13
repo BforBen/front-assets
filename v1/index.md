@@ -1,13 +1,12 @@
 ---
 layout: default
-style: v2
 ---
 
 <div class="page-header">
-    <h1>Version 2 <span class="label label-retirement">RETIRING</span></h1>
+    <h1>Version 1 <span class="label label-live">LIVE</span></h1>
 </div>
 
-<p>This version is linked to Bootstrap version 2.</p>
+<p>This version is linked to Bootstrap version 3.3.6.</p>
 
 <ul class="list-group list-contents list-contents-bottom-divider">
     <li class="list-group-item"><a href="header">Header</a></li>

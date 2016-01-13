@@ -1,10 +1,9 @@
 ---
 layout: default
-style: v2
 ---
 
 <div class="page-header">
-    <h1>Typography <span class="label label-retirement">RETIRING</span></h1>
+    <h1>Typography <span class="label label-live">LIVE</span></h1>
 </div>
 
 <div class="pattern" id="main">
