@@ -1,3 +1,13 @@
+
+.example
+{
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 1em;
+  background: #fefefe;
+  border-left: 3px solid #333;
+}
+
 /*
  * Callouts
  *

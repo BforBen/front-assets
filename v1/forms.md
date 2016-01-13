@@ -61,7 +61,7 @@ title: Forms
     <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute, if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
   </div>
 
-  <div class="bs-example" data-example-id="simple-form-inline">
+  <div class="example" data-example-id="simple-form-inline">
     <form class="form-inline">
       <div class="form-group">
         <label for="exampleInputName2">Name</label>
@@ -89,7 +89,7 @@ title: Forms
 </form>
 {% endhighlight %}
 
-  <div class="bs-example" data-example-id="simple-form-inline">
+  <div class="example" data-example-id="simple-form-inline">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -126,7 +126,7 @@ title: Forms
 </form>
 {% endhighlight %}
 
-  <div class="bs-example" data-example-id="form-inline-with-input-group">
+  <div class="example" data-example-id="form-inline-with-input-group">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
@@ -163,7 +163,7 @@ title: Forms
     <h4>Type declaration required</h4>
     <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
   </div>
-  <div class="bs-example" data-example-id="text-form-control">
+  <div class="example" data-example-id="text-form-control">
     <form>
       <input type="text" class="form-control" placeholder="Text input">
     </form>
@@ -178,7 +178,7 @@ title: Forms
 
   <h3>Textarea</h3>
   <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
-  <div class="bs-example" data-example-id="textarea-form-control">
+  <div class="example" data-example-id="textarea-form-control">
     <form>
       <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
     </form>
@@ -191,7 +191,7 @@ title: Forms
   <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
   <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
   <h4>Default (stacked)</h4>
-  <div class="bs-example" data-example-id="block-checkboxes-radios">
+  <div class="example" data-example-id="block-checkboxes-radios">
     <form>
       <div class="checkbox">
         <label>
@@ -262,7 +262,7 @@ title: Forms
 
   <h4>Inline checkboxes and radios</h4>
   <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
-  <div class="bs-example" data-example-id="inline-checkboxes-radios">
+  <div class="example" data-example-id="inline-checkboxes-radios">
     <form>
       <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -311,7 +311,7 @@ title: Forms
 
   <h4>Checkboxes and radios without label text</h4>
   <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
-  <div class="bs-example" data-example-id="checkboxes-radios-without-labels">
+  <div class="example" data-example-id="checkboxes-radios-without-labels">
     <form>
       <div class="checkbox">
         <label>
@@ -340,7 +340,7 @@ title: Forms
 
   <h3>Selects</h3>
   <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
-  <div class="bs-example" data-example-ids="select-form-control">
+  <div class="example" data-example-ids="select-form-control">
     <form>
       <select class="form-control">
         <option>1</option>
@@ -363,7 +363,7 @@ title: Forms
 
   <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
 
-  <div class="bs-example" data-example-ids="select-multiple-form-control">
+  <div class="example" data-example-ids="select-multiple-form-control">
     <form>
       <select multiple class="form-control">
         <option>1</option>
@@ -388,7 +388,7 @@ title: Forms
 
   <h2 id="forms-controls-static">Static control</h2>
   <p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
-  <div class="bs-example" data-example-id="horizontal-static-form-control">
+  <div class="example" data-example-id="horizontal-static-form-control">
     <form class="form-horizontal">
       <div class="form-group">
         <label class="col-sm-2 control-label">Email</label>
@@ -420,7 +420,7 @@ title: Forms
   </div>
 </form>
 {% endhighlight %}
-  <div class="bs-example" data-example-id="inline-static-form-control">
+  <div class="example" data-example-id="inline-static-form-control">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only">Email</label>
@@ -449,7 +449,7 @@ title: Forms
 
   <h2 id="forms-control-focus">Focus state</h2>
   <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
-  <div class="bs-example">
+  <div class="example">
     <form>
       <input class="form-control" id="focusedInput" type="text" value="Demonstrative focus state">
     </form>
@@ -462,7 +462,7 @@ title: Forms
 
   <h2 id="forms-control-disabled">Disabled state</h2>
   <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
-  <div class="bs-example" data-example-id="text-form-control-disabled">
+  <div class="example" data-example-id="text-form-control-disabled">
     <form>
       <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
     </form>
@@ -484,7 +484,7 @@ title: Forms
     <p>While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
   </div>
 
-  <div class="bs-example" data-example-id="disabled-fieldset">
+  <div class="example" data-example-id="disabled-fieldset">
     <form>
       <fieldset disabled>
         <div class="form-group">
@@ -532,7 +532,7 @@ title: Forms
 
   <h2 id="forms-control-readonly">Readonly state</h2>
   <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
-  <div class="bs-example" data-example-id="readonly-text-form-control">
+  <div class="example" data-example-id="readonly-text-form-control">
     <form>
       <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
     </form>
@@ -548,20 +548,19 @@ title: Forms
     <h4>Associating help text with form controls</h4>
     <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
   </div>
-  <div class="bs-example" data-example-id="simple-help-text">
+  <div class="example" data-example-id="simple-help-text">
     <form>
       <div class="form-group">
         <label for="inputHelpBlock">Input with help text</label>
+        <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
         <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
       </div>
-      <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
     </form>
-  </div><!-- /.bs-example -->
+  </div>
 {% highlight html %}
 <label class="sr-only" for="inputHelpBlock">Input with help text</label>
-<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-...
 <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
 {% endhighlight %}
 </div>
 
@@ -575,7 +574,7 @@ title: Forms
     <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include a <a href="../components/#glyphicons">Glyphicon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="../components/#glyphicons-examples">Glyphicon examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
   </div>
 
-  <div class="bs-example" data-example-id="form-validation-states">
+  <div class="example" data-example-id="form-validation-states">
     <form>
       <div class="form-group has-error">
         <label class="control-label" for="inputError1">Input with error</label>
@@ -615,7 +614,7 @@ title: Forms
 
 <h3>Column sizing</h3>
 <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
-<div class="bs-example" data-example-id="form-control-column-sizing">
+<div class="example" data-example-id="form-control-column-sizing">
   <form>
     <div class="row">
       <div class="col-xs-2">
