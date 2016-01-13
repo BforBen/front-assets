@@ -8,22 +8,23 @@ title: Forms
 <h2>Form structure</h2>
 <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
 
-<form>
-	<div class="form-group">
-		<label for="exampleInputEmail1">Email address</label>
-		<span class="help-block help-info">Example help text here</span>
-		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-	</div>
-	<div class="form-group">
-		<label for="exampleInputPassword1">Password</label>
-		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-	</div>
-	<div class="form-group">
-		<button type="submit" class="btn btn-default">Submit</button>
-	</div>
-</form>
-<p><a class="btn btn-lg btn-link" href="#">Cancel</a></p>
-
+<div class="example">
+	<form>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<span class="help-block help-info">Example help text here</span>
+			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-lg">Login</button>
+		</div>
+	</form>
+	<p><a class="btn btn-lg btn-link" href="#">Cancel</a></p>
+</div>
 {% highlight html %}
 <form>
 	<div class="form-group">
@@ -36,7 +37,7 @@ title: Forms
 		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 	</div>
 	<div class="form-group">
-		<button type="submit" class="btn btn-default">Submit</button>
+		<button type="submit" class="btn btn-primary btn-lg">Login</button>
 	</div>
 </form>
 <p><a class="btn btn-lg btn-link" href="#">Cancel</a></p>
