@@ -309,48 +309,20 @@ title: Forms
 </label>
 {% endhighlight %}
 
-  <h4>Checkboxes and radios without label text</h4>
-  <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
-  <div class="example" data-example-id="checkboxes-radios-without-labels">
-    <form>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Checkbox without label text">
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="Radio button without label text">
-        </label>
-      </div>
-    </form>
-  </div>
-{% highlight html %}
-<div class="checkbox">
-  <label>
-    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-  </label>
-</div>
-{% endhighlight %}
 
-  <h3>Selects</h3>
-  <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
-  <div class="example" data-example-ids="select-form-control">
-    <form>
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </form>
-  </div><!-- /.bs-example -->
+<h3>Selects</h3>
+<p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+<div class="example" data-example-ids="select-form-control">
+  <form>
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </form>
+</div>
 {% highlight html %}
 <select class="form-control">
   <option>1</option>
@@ -361,19 +333,19 @@ title: Forms
 </select>
 {% endhighlight %}
 
-  <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+<p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
 
-  <div class="example" data-example-ids="select-multiple-form-control">
-    <form>
-      <select multiple class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </form>
-  </div><!-- /.bs-example -->
+<div class="example" data-example-ids="select-multiple-form-control">
+  <form>
+    <select multiple class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </form>
+</div>
 
 {% highlight html %}
 <select multiple class="form-control">
@@ -385,42 +357,33 @@ title: Forms
 </select>
 {% endhighlight %}
 
-
-  <h2 id="forms-controls-static">Static control</h2>
-  <p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
-  <div class="example" data-example-id="horizontal-static-form-control">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-          <p class="form-control-static">email@example.com</p>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-      </div>
-    </form>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<form class="form-horizontal">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
+<h2 id="forms-controls-static">Static control</h2>
+<p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
+<div class="example">
+  <form>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Email</label>
       <p class="form-control-static">email@example.com</p>
     </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
     </div>
+  </form>
+</div>
+{% highlight html %}
+<form>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <p class="form-control-static">email@example.com</p>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Password</label>
+    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
   </div>
 </form>
 {% endhighlight %}
-  <div class="example" data-example-id="inline-static-form-control">
+  <div class="example">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only">Email</label>
