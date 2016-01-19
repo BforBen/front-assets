@@ -285,6 +285,10 @@ font-size: 19px;
 }
 @media screen and (max-width:767px)
 {
+	.lead
+	{
+		font-size: 18px;
+	}
 	.landing-list p
 	{
 		min-height: 0;
