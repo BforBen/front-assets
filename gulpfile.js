@@ -1,11 +1,11 @@
 var gulp = require('gulp'),
 	csslint = require('gulp-csslint'),
-  del = require('del'),
+	del = require('del'),
 	gutil = require('gulp-util'),
 	less = require('gulp-less'),
-	mandrill = require('mandrill-api/mandrill'),
-  minifyCSS = require('gulp-minify-css'),
-  sourcemaps = require('gulp-sourcemaps');
+//	mandrill = require('mandrill-api/mandrill'),
+	minifyCSS = require('gulp-minify-css'),
+	sourcemaps = require('gulp-sourcemaps');
  
 var customReporter = function(file) {
   var email = gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.relative),
@@ -20,7 +20,7 @@ var customReporter = function(file) {
   });
 
 
-  if (process.env.APPVEYOR && process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL && process.env.MANDRILL_API_KEY)
+/*  if (process.env.APPVEYOR && process.env.APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL && process.env.MANDRILL_API_KEY)
   {
     var mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_API_KEY);
     var message = {
@@ -41,7 +41,7 @@ var customReporter = function(file) {
         ]
     };
     mandrill_client.messages.send({"message": message});
-  }
+  }*/
 };
  
 gulp.task('build:less', function(){
@@ -67,15 +67,26 @@ gulp.task('lint:css', function() {
 });
  
 gulp.task('minify:css', function() {
-  gulp.src('./css/*.css')
+  gulp.src('./css/*.min.css')
+    .pipe(gulp.dest('./dist/'));
+
+  gulp.src(['./css/*.css', !'./css/*.min.css'])
     //.pipe(sourcemaps.init())
     .pipe(minifyCSS())
     //.pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./dist/'));
+
+  gulp.src('./css/*.css.map')
+    .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('copy:js', function(){
+  gulp.src(['./js/**/*.js'])
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('clean:dist', function (cb) {
   del(['dist/*'], cb);
 });
 
-gulp.task('default', ['copy:icons', 'copy:images', 'minify:css']);
+gulp.task('default', ['copy:icons', 'copy:images', 'copy:js', 'minify:css']);
