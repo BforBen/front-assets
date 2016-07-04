@@ -70,7 +70,7 @@ gulp.task('minify:css', function() {
   gulp.src('./css/*.min.css')
     .pipe(gulp.dest('./dist/'));
 
-  gulp.src(['./css/*.css', !'./css/*.min.css'])
+  gulp.src(['./css/*.css', '!./css/*.min.css'])
     //.pipe(sourcemaps.init())
     .pipe(minifyCSS())
     //.pipe(sourcemaps.write())
